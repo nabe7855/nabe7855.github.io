@@ -14,6 +14,76 @@ h1 img {
   text-align: left;
 }
 
+h2 {
+  font-size: 18px;
+  border-bottom: 1px solid;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  padding: 8px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+dt::after {
+  content: '+';
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  transition: transform .3s;
+}
+
+dl > div.appear dt::after {
+  transform: rotate(45deg);
+}
+
+dd {
+  padding: 8px;
+  margin: 0;
+  display: none;
+}
+
+dl > div.appear dd {
+  display: block;
+  animation: 1.5s fadeIn;
+}
+
+.bg_test-text {
+
+  display:  inline-block;                         /* インラインブロックにする */
+  padding: 10px 20px;                             /* 余白指定 */
+  background-color: rgba(255, 255, 255, 0.7);     /* 背景色指定 */
+}
+
+.bg_test {
+  text-align:  center;    /* 文字中央寄せ */
+  padding:  150px;        /* 余白指定 */
+  background-image: url(../img/ロゴ2.png);    /* 背景画像指定 */
+  background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
+  background-position:center center;                     /* 画像の表示位置を指定  */
+  background-size:contain;                               /* 画像のサイズを指定    */
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 header {
   background: orange;
   color: #fff;

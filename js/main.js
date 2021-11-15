@@ -20,6 +20,19 @@ const slides = ul.children
 const dots = [];
 let currentIndex =0;
 
+const dts = document.querySelectorAll('dt');
+dts.forEach(dt => {
+  dt.addEventListener('click', () => {
+    dt.parentNode.classList.toggle('appear');
+
+    dts.forEach(el => {
+      if (dt !== el){
+          el.parentNode.classList.remove('appear');
+      }
+    });
+ });
+});
+
 
 function updateButtons() {
   prev.classList.remove('hidden')
