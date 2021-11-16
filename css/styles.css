@@ -59,7 +59,7 @@ dl > div.appear dd {
 
   display:  inline-block;                         /* インラインブロックにする */
   text-align:  center;
-  /* width: 300px; */
+  /* white-space: nowrap; */
   padding: 10px 20px;                             /* 余白指定 */
   background-color: rgba(255, 255, 255, 0.7);     /* 背景色指定 */
 }
@@ -130,7 +130,7 @@ vertical-align: bottom;
   text-align: center;
   padding: 64px;
   opacity: 0;
-  z-index: 1;
+  z-index: 100000;
   pointer-events: none;
  transition: opacity .6s;
 }
