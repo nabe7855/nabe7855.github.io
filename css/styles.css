@@ -16,7 +16,7 @@ h1 img {
 
 h2 {
   font-size: 18px;
-  border-bottom: 1px solid;
+  /* border-bottom: 1px solid; */
   padding: 8px 16px;
   margin-bottom: 16px;
 }
@@ -58,6 +58,8 @@ dl > div.appear dd {
 .bg_test-text {
 
   display:  inline-block;                         /* インラインブロックにする */
+  text-align:  center;
+  /* width: 300px; */
   padding: 10px 20px;                             /* 余白指定 */
   background-color: rgba(255, 255, 255, 0.7);     /* 背景色指定 */
 }
@@ -65,7 +67,7 @@ dl > div.appear dd {
 .bg_test {
   text-align:  center;    /* 文字中央寄せ */
   padding:  150px;        /* 余白指定 */
-  background-image: url(img/ロゴ2.png);    /* 背景画像指定 */
+  background-image: url(../img/ロゴ2.png);    /* 背景画像指定 */
   background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
   background-position:center center;                     /* 画像の表示位置を指定  */
   background-size:contain;                               /* 画像のサイズを指定    */
@@ -86,11 +88,16 @@ dl > div.appear dd {
 
 header {
   background: orange;
+  opacity: .8;
   color: #fff;
   text-align: center;
   /* padding-top: 5px; */
   display: flex;
   padding: 0 16px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10000;
 }
 
 .sp-menu {
@@ -226,7 +233,7 @@ vertical-align: bottom;
   font-weight: normal;
 }
 
-.members ul {
+.members ol {
   list-style: none;
   text-align: center;
   margin: 0;
@@ -261,11 +268,13 @@ vertical-align: bottom;
 }
 
 footer {
-  padding: 64px 0;
+  padding: 0px 0;
   background: rgb(32, 32, 32);
   color:  gray;
   text-align: center;
 }
+
+
 
 .pc-menu {
   display: none;
@@ -340,10 +349,10 @@ footer {
       width: calc(50% - 32px);
     }
 
-    .members ul {
+    .members ol {
       width: 800px;
       margin: 0 auto;
-      display: flex;
+      /* display: flex; */
       justify-content: space-between;
     }
 
@@ -355,13 +364,14 @@ footer {
 }
 
 .carousel {
+  padding-top: 64px;
   width: 100%;
   margin: auto;
 }
 
 .container2 {
   width: 100%;
-  height: 220px;
+  height: 350px;
   /* outline: 8px solid red; */
   overflow: hidden;
   position: relative;
@@ -453,3 +463,19 @@ nav button {
 nav .current2 {
   background: rgb(99, 99, 99);
 }
+
+
+
+
+
+.container3 {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* .container3 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} */
