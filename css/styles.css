@@ -198,8 +198,26 @@ vertical-align: bottom;
   border-radius: 4px;
 }
 
+article .btn {
+  text-decoration: none;
+  background: rgb(255, 244, 244);
+  color: rgb(0, 0, 0);
+  outline: 8px solid red;
+  display: block;
+  width: 250px;
+  line-height: 44px;
+  margin: 40px auto 48px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
 .btn:hover {
   opacity: 0.9;
+}
+
+article h2, p {
+  text-align: center;
 }
 
 .features img {
@@ -250,6 +268,10 @@ vertical-align: bottom;
 
 .members li {
   padding-bottom: 64px;
+}
+
+.twitter {
+  width: 160px;
 }
 
 .call-to-action {
