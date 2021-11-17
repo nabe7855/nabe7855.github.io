@@ -466,7 +466,7 @@ li img {
 }
 
 #modal.hidden2 {
-  transform: translate(0,-5000px);
+  display: none;
 }
 
 nav  {
@@ -539,7 +539,8 @@ nav .current2 {
   left: 0;
   right: 0;
   margin: 0 auto;
-  transition: transform 0.4s;
+  transform: translateY(16px);
+  transition: opacity .3s, transform .3s;
 }
 
 #modal > p {
