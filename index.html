@@ -21,11 +21,11 @@
     <div class="pc-menu">
         <div class="gnav">
           <ol class="gnav__menu">
-              <li class="gnav__menu__item"><a href="#">店舗情報</a></li>
-              <li class="gnav__menu__item"><a href="#">御品書</a></li>
-              <li class="gnav__menu__item"><a href="#">ナベの具</a></li>
-              <li class="gnav__menu__item"><a href="#">デザート</a></li>
-              <li class="gnav__menu__item"><a href="#">おかわり</a></li>
+              <li class="gnav__menu__item"><a href="#introduce">店舗情報</a></li>
+              <li class="gnav__menu__item"><a href="#features">御品書</a></li>
+              <li class="gnav__menu__item"><a href="#members">ナベの具</a></li>
+              <li class="gnav__menu__item"><a href="#dessert">デザート</a></li>
+              <li class="gnav__menu__item"><a href="#seconds">おかわり</a></li>
           </ol>
         </div>
     </div>
@@ -46,15 +46,15 @@
     </div> --> 
 
   </header>
-  <div class="overlay">
+  <div class="overlay" id="overlay">
     <span class="material-icons" id="close">close</span>
       <div class="gnav">
         <ol class="gnav__menu">
-          <li class="gnav__menu__item"><a href="#">店舗情報</a></li>
-          <li class="gnav__menu__item"><a href="#">御品書</a></li>
-          <li class="gnav__menu__item"><a href="#">ナベの具</a></li>
-          <li class="gnav__menu__item"><a href="#">デザート</a></li>
-          <li class="gnav__menu__item"><a href="#">おかわり</a></li>
+          <li class="gnav__menu__item"><a href="#introduce">店舗情報</a></li>
+          <li class="gnav__menu__item"><a href="#features">御品書</a></li>
+          <li class="gnav__menu__item"><a href="#members">ナベの具</a></li>
+          <li class="gnav__menu__item"><a href="#dessert">デザート</a></li>
+          <li class="gnav__menu__item"><a href="#seconds">おかわり</a></li>
         </ol>
       </div>
   </div>
@@ -75,17 +75,19 @@
     </nav>
     
   </section>
-    <section class="features">
-      <div class="bg_test">
-        <div class="bg_test-text">
-<h1>当店について</h1>
-<!-- <h1><img src="img/ロゴ2.png"></h1> -->
-<p>ご来店ありがとうございます。<br>
-当店は様々なナベを取り扱う専門店です。<br>
-是非堪能してください～
-</p>
-</div>
-</div>
+  <section class="introduce" id="introduce">
+  <div class="bg_test">
+    <div class="bg_test-text"> 
+      <h1>当店について</h1>
+      <!-- <h1><img src="img/ロゴ2.png"></h1> -->
+      <p>ご来店ありがとうございます。<br>
+        当店は様々なナベを取り扱う専門店です。<br>
+        是非堪能してください～
+      </p>
+    </div>
+  </div>
+</section>
+  <section class="features" id="features">
 <h1>御品書</h1>
 
 <div class="container">
@@ -143,21 +145,31 @@
 </div>
 
     </section>
-    <section class="members">
-      <h1>生産者</h1>
+    <section class="members" id="members">
+      <h1>ナベのグ</h1>
       <ol>
         <li>
           <img src="img/アイコン.png">
           <h1>ナベ</h1>
             <p>普段果物ばかりかじってます。全く料理しませんｗｗ</p>
-            <div class="links">
-                <a href="" class="twitter"><img src="img/twitter.png"></a>
-                <a href="https://www.instagram.com/nabe7855/" class="Instagram"><img src="img/instagram.png"></a>
-                <a href="https://www.instagram.com/nabe_0507/" class="Instagram"><img src="img/instagram.png"></a>
-
-            </div>
+            <table>
+              <tr>
+                <td>
+                  <a href="#" class="twitter_btn2">
+                    <i class="fab fa-twitter"></i> <span>Twitter</span>
+                    </a>
+                </td>
+                <td> 
+                  <a href="https://www.instagram.com/nabe_0507/" class="insta_btn2">
+                    <i class="fab fa-instagram"></i> <span>Instagram</span>
+                  </a>
+                </td>
+              </tr>
+            </table>
         </li>
         <li>
+ 
+
           <img src="img/member2.png">
           <h2>吉田</h2>
             <p>頑張ります。頑張ります。頑張ります。頑張ります。</p>
@@ -198,8 +210,8 @@
     </section>
 
     
-    <section class="call-to-action">
-      <h1>サイドメニュー</h1>
+    <section class="call-to-action" id="dessert">
+      <h1>デザート</h1>
       <h2>グッズ</h2>
       <img src="img/みたけはん.PNG" width="200" height="150">
       <p>変なもの作ってますｗｗ</p>
@@ -213,9 +225,9 @@
       <h2>Tiktok</h2>
       <img src="img/tiktok.png">
       <p>頑張って更新しますｗｗ</p>
-      <a href="" class="btn">質問する</a>
+      <a href="" class="btn">みちゃう</a>
     </section>
-    <article class="drink">
+    <article class="drink" id="seconds">
       <h1>おかわり</h1>
 
       <!-- <section class="FANLETTER">
@@ -264,7 +276,7 @@
       <section class="WANTS">
         <h2>WANTS</h2>
         <p>ナベの欲しいもの</p>
-        <a href="" class="btn">プレゼント送付はこちら</a>
+        <a href="" class="btn">プレゼントする</a>
       </section>
       <section class="JOB">
         <h2>JOB</h2>
