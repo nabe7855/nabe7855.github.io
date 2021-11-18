@@ -102,6 +102,7 @@ header {
 
 .sp-menu {
   margin-left: auto;
+  padding: 0 20px;
 }
 
 .sp-menu #open {
