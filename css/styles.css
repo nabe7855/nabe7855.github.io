@@ -55,25 +55,43 @@ dl > div.appear dd {
   animation: 1.5s fadeIn;
 }
 
-.bg_test-text {
 
-  display:  inline-block;                         /* インラインブロックにする */
-  text-align:  center;
-  /* white-space: nowrap; */
-  padding: 10px 20px;                             /* 余白指定 */
+.example {
+  position: relative;
+  }
+.example img {
+  opacity: 0.1;
+}
+
+.example p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  text-align:left;
+  /*文字の装飾は省略*/
+  color          : #ffffff;            /* 文字の色 */
+  font-size: 100%;
+  letter-spacing : 4px;                /* 文字間 */
+  text-shadow    : 
+       2px  2px 1px #003366,
+      -2px  2px 1px #003366,
+       2px -2px 1px #003366,
+      -2px -2px 1px #003366,
+       2px  0px 1px #003366,
+       0px  2px 1px #003366,
+      -2px  0px 1px #003366,
+       0px -2px 1px #003366;        /* 文字の影 */
+  }
+
+.example img {
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.7);     /* 背景色指定 */
-}
-
-.bg_test {
-  text-align:  center;    /* 文字中央寄せ */
-  padding:  150px;        /* 余白指定 */
-  background-image: url(../img/ロゴ2.png);    /* 背景画像指定 */
-  background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
-  background-position:center center;                     /* 画像の表示位置を指定  */
-  background-size:contain;                               /* 画像のサイズを指定    */
-  background-color:rgba(255,255,255,0.8);
-  background-blend-mode:lighten;
-}
+  }
 
 @keyframes fadeIn {
   0% {
@@ -620,7 +638,7 @@ h2 {
 } */
 
 #CDT {
-  font-size: 60px;
+  font-size: 20px;
   color: #eee;
   margin: 70px 0 100px;
   font-weight: bold;
@@ -708,6 +726,7 @@ footer p {
   margin: .5em 0;
   line-height: 1.5;
 } */
+
 
 
 
