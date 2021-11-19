@@ -25,6 +25,11 @@ dl {
   margin: 0;
 }
 
+.titleback {
+  width: 100vw;
+  text-align: center;
+}
+
 dt {
   padding: 8px;
   cursor: pointer;
