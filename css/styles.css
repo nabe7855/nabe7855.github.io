@@ -63,9 +63,17 @@ dl > div.appear dd {
 
 .example {
   position: relative;
+  height: 300px;
+  overflow: hidden;
   }
 .example img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0.1;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);     /* 背景色指定 */
 }
 
 .example p {
@@ -91,11 +99,6 @@ dl > div.appear dd {
        0px  2px 1px #003366,
       -2px  0px 1px #003366,
        0px -2px 1px #003366;        /* 文字の影 */
-  }
-
-.example img {
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.7);     /* 背景色指定 */
   }
 
 @keyframes fadeIn {
@@ -425,6 +428,89 @@ footer {
 
 }
 
+@media screen and (min-width: 769px) {
+.okawari-content {
+  width: 60%;
+  margin: 0 auto 30px;
+  max-width: 650px;
+}
+
+.title-box h2 {
+  text-align: left;
+}
+
+  .content-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .text-box p {
+    margin: 0;
+    text-align: left;
+  } 
+  .link-box {
+    text-align: right;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+  .link-box *{
+  cursor: pointer;
+}
+
+.link-box a {
+  color: black;
+}
+
+.okawari-line {
+  width: 85%;
+  max-width: 800px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #777;
+  border-radius: 2px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  .okawari-content {
+    width: 90%;
+    margin: 0 auto 30px;
+    max-width: 450px;
+  }
+
+  .title-box h2 {
+    text-align: left;
+  }
+
+  .text-box p {
+    text-align: left;
+    text-align: left;
+  }
+
+  .link-box {
+    text-align: right;
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+  }
+  .link-box *{
+    cursor: pointer;
+  }
+
+  .link-box a {
+    color: black;
+  }
+
+  .okawari-line {
+    width: 98%;
+    max-width: 500px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #777;
+    border-radius: 2px;
+  }
+}
+
 .carousel {
   padding-top: 64px;
   width: 100%;
@@ -433,7 +519,7 @@ footer {
 
 .container2 {
   width: 100%;
-  height: 350px;
+  height: 50vw;
   /* outline: 8px solid red; */
   overflow: hidden;
   position: relative;
@@ -615,12 +701,12 @@ body {
 .container5 {
   text-align: center;
   margin: 0 auto;
-  width: 200%;
-  height: 400px;
-  position: absolute;
+  /* width: 200%; */
+  /* height: 400px; */
+  /* position: absolute; */
   /* top: 50%; */
-  left: 50%;
-  margin: 50px 0 0 -400px;
+  /* left: 50%; */
+  /* margin: 50px 0 0 -400px; */
 }
   
 /* h1,
@@ -645,7 +731,7 @@ h2 {
 #CDT {
   font-size: 20px;
   color: #eee;
-  margin: 70px 0 100px;
+  margin: 35px 0 50px;
   font-weight: bold;
 }
 
