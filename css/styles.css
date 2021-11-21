@@ -101,6 +101,22 @@ dl > div.appear dd {
        0px -2px 1px #003366;        /* 文字の影 */
   }
 
+
+  .example2 {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    }
+  .example2 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.7);     /* 背景色指定 */
+  }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -323,6 +339,7 @@ article h1, h2, p {
 
 .dessert h1 {
   font-weight: nomal;
+  text-align: center;
 }
 
 .dessert ol {
