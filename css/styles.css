@@ -143,7 +143,7 @@ dl > div.appear dd {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0.1;
-    width: 20%;
+    width: 50vw;
     background-color: rgba(255, 255, 255, 0.7);     /* 背景色指定 */
   }
 
@@ -275,9 +275,9 @@ article .btn {
   text-decoration: none;
   background: rgb(255, 244, 244);
   color: rgb(0, 0, 0);
-  outline: 8px solid red;
+  outline: 4px solid red;
   display: block;
-  /* width: 250px; */
+  width: 100%;
   line-height: 44px;
   margin: 40px auto 48px;
   font-size: 14px;
