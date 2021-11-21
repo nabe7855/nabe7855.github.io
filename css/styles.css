@@ -214,7 +214,7 @@ vertical-align: bottom;
 
 .btn {
   text-decoration: none;
-  background: white;
+  /* background: white; */
   color: orange;
   display: block;
   width: 140px;
@@ -316,6 +316,68 @@ article h1, h2, p {
 }
 
 
+.dessert {
+  padding: 80px 0;
+  background: coral;
+}
+
+.dessert h1 {
+  font-weight: nomal;
+}
+
+.dessert ol {
+  list-style: none;
+  margin-top: 32px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+}
+
+.dessert li {
+  all: initial;
+  width: calc((100% - 16px) / 2);
+
+}
+
+.dessert li img {
+
+  width: 100%;
+}
+
+.dessert li a {
+  display: block;
+}
+
+.container7 {
+    margin: 0 16px;
+
+  }
+
+hr {
+  border:none; /*水平線の境界線を消す*/
+    border-top-style:dashed; /*線の種類*/
+    border-top-width:1px; /*線の太さ*/  
+    border-top-color:#996666; /*線の色*/ 
+}
+
+  /* medium screen */
+@media (min-width: 600px) {
+ .dessert li {
+  all: initial;
+  width: calc((100% - 32px) / 3);
+}
+}
+
+  /* large screen */
+@media (min-width: 800px) {
+  .container {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    max-width: 800px;
+  }
+}
 
 .call-to-action {
   background: coral;
@@ -838,7 +900,7 @@ footer p {
   width: 150px;/*幅*/
   text-align: center;/*中身を中央寄せ*/
   font-size: 25px;/*文字のサイズ*/
-  line-height: 50px;/*高さと合わせる*/
+  /* line-height: 50px;高さと合わせる */
   background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
   background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
   overflow: hidden;/*はみ出た部分を隠す*/
