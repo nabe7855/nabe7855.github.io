@@ -277,7 +277,7 @@ article .btn {
   color: rgb(0, 0, 0);
   outline: 8px solid red;
   display: block;
-  width: 250px;
+  /* width: 250px; */
   line-height: 44px;
   margin: 40px auto 48px;
   font-size: 14px;
@@ -384,6 +384,7 @@ article h1, h2, p {
 
 .dessert li {
   all: initial;
+  width: 50%;
   width: calc((100% - 16px) / 2);
 
 }
@@ -408,6 +409,13 @@ hr {
     border-top-width:1px; /*線の太さ*/  
     border-top-color:#996666; /*線の色*/ 
 }
+
+/* @media (max-width: 599px) {
+  .dessert li {
+
+   width: calc((100% - 32px));
+ }
+ } */
 
   /* medium screen */
 @media (min-width: 600px) {
