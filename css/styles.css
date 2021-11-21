@@ -10,15 +10,45 @@ margin: 0;
 line-height: 64px;
 }
 
+h1 {
+  text-align: center;
+}
+
 h1 img {
   text-align: left;
 }
+
 
 h2 {
   font-size: 18px;
   /* border-bottom: 1px solid; */
   padding: 8px 16px;
   margin-bottom: 16px;
+}
+
+/* animation */
+
+.animate {
+  opacity: 0;
+
+  transition: opacity 2.3s, transform .9s;
+}
+
+.animate.center {
+  transform: translateY(40px);
+}
+
+.animate.slide-from-left {
+  transform: translateX(-40px);
+}
+
+.animate.slide-from-right {
+  transform: translateX(40px);
+}
+
+.animate.appear {
+  opacity: 1;
+  transform: none;
 }
 
 dl {
