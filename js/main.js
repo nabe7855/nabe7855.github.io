@@ -1,4 +1,3 @@
-'use strict'
 
 {
 const open = document.getElementById('open');
